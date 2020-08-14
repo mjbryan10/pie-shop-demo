@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder - Copy %282%29\**" />
+    <Compile Remove="NewFolder - Copy\**" />
+    <Content Remove="NewFolder - Copy %282%29\**" />
+    <Content Remove="NewFolder - Copy\**" />
+    <EmbeddedResource Remove="NewFolder - Copy %282%29\**" />
+    <EmbeddedResource Remove="NewFolder - Copy\**" />
+    <None Remove="NewFolder - Copy %282%29\**" />
+    <None Remove="NewFolder - Copy\**" />
+  </ItemGroup>
+
+</Project>
