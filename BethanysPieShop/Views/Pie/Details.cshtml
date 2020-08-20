@@ -1,0 +1,8 @@
+﻿@model PieDetailsViewModel
+
+
+<h1>@Model.Pie.Name</h1>
+<img src="@Model.Pie.ImageUrl" alt="@Model.Pie.Name" />
+<h3>Description:</h3>
+<p>@Model.Pie.LongDescription</p>
+<h3>Price: @Model.Pie.Price.ToString("c")</h3>

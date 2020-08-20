@@ -29,5 +29,13 @@ namespace BethanysPieShop.Controllers
             piesListViewModel.CurrentCategory = "Cheese Cakes";
             return View(piesListViewModel);
         }
+
+        public ViewResult Details(int id)
+        {
+            PieDetailsViewModel pieDetailsViewModel = new PieDetailsViewModel();
+            pieDetailsViewModel.Pie = _pieRepository.GetPieById(id);
+
+            return View(pieDetailsViewModel);
+        }
     }
 }
