@@ -11,6 +11,9 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.site-logo {
+    margin: 0 auto;
+}
 
 .slide-image {
     width: 100%;
