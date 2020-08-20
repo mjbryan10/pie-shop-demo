@@ -30,12 +30,14 @@ namespace BethanysPieShop.Controllers
             return View(piesListViewModel);
         }
 
-        public ViewResult Details(int id)
+        public IActionResult Details(int id)
         {
-            PieDetailsViewModel pieDetailsViewModel = new PieDetailsViewModel();
-            pieDetailsViewModel.Pie = _pieRepository.GetPieById(id);
+            var pie = _pieRepository.GetPieById(id);
 
-            return View(pieDetailsViewModel);
+            if (pie == null)
+                return NotFound();
+
+            return View(pie);
         }
     }
 }
