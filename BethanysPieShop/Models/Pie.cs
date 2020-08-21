@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BethanysPieShop.Models
 {
-    public class Class
+    public class Pie
     {
         public int PieId { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,10 @@ namespace BethanysPieShop.Models
         public decimal Price { get; set; }
         public string ImageUrl { get; set; }
         public string ImageThumbnailUrl { get; set; }
-        public bool MyProperty { get; set; }
+        public bool IsPieOfTheWeek { get; set; }
+        public bool InStock { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+        public string Notes { get; set; }
     }
 }
